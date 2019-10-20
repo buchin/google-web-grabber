@@ -10,7 +10,7 @@ class GoogleWebGrabber
 	
 	public static function grab($keyword, $options = [])
 	{
-		$url = "https://www.google.com/search?q=" . urlencode($keyword);// . "&source=lnms&tbm=isch&tbs=";
+		$url = "https://www.google.com/search?num=100&q=" . urlencode($keyword);// . "&source=lnms&tbm=isch&tbs=";
 
 		$ua = \Campo\UserAgent::random([
 		    'os_type' => ['Windows', 'OS X'],
